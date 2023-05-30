@@ -1,0 +1,121 @@
+body {
+  background-color: maroon;
+}
+
+h1, h2, p {
+  text-align: center;
+  color: cornsilk;
+  font-family: Unbounded, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+h1{
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 0.8;
+}
+h2 {
+  font-size: 1em;
+  text-transform: lowercase;
+  line-height: 0.6;
+  font-weight: 400;
+}
+p {
+  font-size: 0.6em;
+  text-transform: lowercase;
+  font-weight: 200;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: cornsilk;
+}
+
+thead {
+  background-color: olive;
+  color: cornsilk;
+}
+
+thead th:nth-child(1) {
+  width: 8%;
+}
+thead th:nth-child(2) {
+  width: 15%;
+}
+thead th:nth-child(3) {
+  width: 15%;
+}
+thead th:nth-child(4) {
+  width: 15%;
+}
+thead th:nth-child(5) {
+  width: 40%;
+}
+thead th:nth-child(6) {
+  width: 7%;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: center;
+  border: 3px solid black;
+}
+
+th {
+  font-family: Questrial, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
+th[scope="row"] {
+  background-color: goldenrod;
+}
+
+td {
+  font-family: Playfair, serif;
+  overflow: auto;
+}
+
+code {
+  background-color: olive;
+  color: cornsilk;
+  font-size: 0.9em;
+  padding: 1px;
+}
+
+.example {
+  background-color: wheat;
+}
+
+.notApplicable {
+  background-color: wheat;
+  color: olive;
+  text-transform: lowercase;
+}
+
+.weight {
+  background-color: burlywood;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: right;
+  padding: 20px;
+  font-family: Questrial;
+  color: wheat;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+}
+
+caption a {
+  color: goldenrod;
+}
