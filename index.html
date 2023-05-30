@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors Cheatsheet by KrisRix</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;1,300&family=Questrial&family=Unbounded:wght@200;400;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors</h1>
+    <h2>A cheatsheet</h2>
+    <p>From most to least specific</p>
+  </header>
+  <!-- Table -->
+  <div class="container">
+   <table>
+      <caption>
+    Information distilled from <a href="https://developer.mozilla.org/en-US/">MDN Docs</a>
+  </caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Syntax</th>
+        <th scope="col">Example CSS</th>
+        <th scope="col">Example HTML</th>
+        <th scope="col">Notes</th>
+        <th scope="col">Weight</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">ID selectors</th>
+        <td><code>#id_value { style properties }</code></td>
+        <td class="example"><code>#identified</code></td>
+        <td class="example"><code>&lt;div id="identified"&gt;</code></td>
+        <td>Matches element based on value of element's id attribute, which <em>must be unique</em> in the document</td>
+        <td class="weight">1-0-0</td>
+      </tr>
+      <tr>
+        <th scope="row">Class selectors</th>
+        <td><code>.class_name { style properties }</code></td>
+        <td class="example"><code>.fancy</code></td>
+        <td class="example"><code>&lt;span class="fancy"&gt;</code></td>
+        <td>Matches elements based on contents of class attribute</td>
+        <td rowspan=3 class="weight">0-1-0</td>
+      </tr>
+      <tr>
+        <th scope="row">Attribute selectors</th>
+        <td><code>[attr=value]</code></td>
+        <td class="example"><code>div[lang="en-us"]</code></td>
+        <td class="example"><code>&lt;div lang="en-us"&gt;</code></td>
+        <td>Matches elements based on presence or value of given attribute</td>
+      </tr>
+      <tr>
+        <th scope="row">Pseudo-classes</th>
+        <td><code>selector:pseudo-class {
+  property: value;
+}</code></td>
+        <td class="example"><code>button:hover</code></td>
+        <td class="notApplicable">N/A</td>
+        <td>Keyword added to selector (referred to as <code>anchor element</code>) that specifies special <em>state</em> of selected element(s)</td>
+      </tr>
+      <tr>
+        <th scope="row">Type selectors</th>
+        <td><code>element { style properties }</code></td>
+        <td class="example"><code>h1 { }</code></td>
+        <td class="example"><code>&lt;h1&gt;</code></td>
+        <td>Matches elements by node name, meaning selects all elements of given type within document</td>
+        <td rowspan=2 class="weight">0-0-1</td>
+      </tr>
+      <tr>
+        <th scope="row">Pseudo-elements</th>
+        <td><code>selector::pseudo-element {
+  property: value;
+}</code></td>
+        <td class="example"><code>a::before</code></td>
+        <td class="notApplicable">N/A</td>
+        <td>Keyword added to selector that allows styling <em>specific part</em> of selected element</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
